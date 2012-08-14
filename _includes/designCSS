@@ -1,0 +1,116 @@
+<style type="text/css">
+  @font-face {
+    font-family: 'GothamCondensedMedium';
+    src: url('/assets/fonts/gothamcondensed-medium-webfont.eot');
+    src: local('☺'), url('/assets/fonts/gothamcondensed-medium-webfont.woff') format('woff'), url('/assets/fonts/gothamcondensed-medium-webfont.ttf') format('truetype'), url('/assets/fonts/gothamcondensed-medium-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Univers59UltraCondensed';
+    src: url('/assets/fonts/univers-ultracondensed-webfont.eot');
+    src: local('☺'), url('/assets/fonts/univers-ultracondensed-webfont.woff') format('woff'), url('/assets/fonts/univers-ultracondensed-webfont.ttf') format('truetype'), url('/assets/fonts/univers-ultracondensed-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    background: #fff url(/assets/images/burrows-gaskill/bkgd.jpg) no-repeat top center fixed;
+    font-family: 'Lucida Grande', 'Helvetica Nueu', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #515151;
+    text-shadow: 1px 1px 1px rgba(191,191,191,.6);
+    text-align: center;
+  }
+
+  #outer_wrapper    { width: 800px; margin: 0 auto; text-align: justify; }
+  #comments_wrapper { text-align: left; margin-top: 24px; padding-top: 24px; border-top: 1px solid #ccc; }
+
+
+/* --- COMMENTS --- */
+
+.clear { display: inline-block; }
+.clear:after, .container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .clear { height: 1%; }
+.clear { display: block; }
+
+#comment_wrapper ol { margin-left: 0; padding-left: 0; }
+#comment_wrapper label {
+  display: block;
+}
+#comment_wrapper input.text,
+#comment_wrapper textarea {
+  width: 700px;
+}
+
+#comment_wrapper select,
+#comment_wrapper input,
+#comment_wrapper textarea {
+  padding: .5em 10px;
+  display: block;
+}
+
+li.comment {
+  border-left: 3px solid #aaa;
+  padding-left: 17px;
+  margin-bottom: .75em;
+}
+
+li.comment .meta {
+  display: block
+}
+
+li.comment .approval {
+  color: #a1a1a1;
+}
+form { padding-left: 50px; }
+
+form .error {
+  margin-left: 185px;
+  display: block;
+  color: #a61717;
+  background-color: rgb(255,229,240);
+  padding: .5em 10px;
+  font-family: 'Lucida Grande', 'Helvetica Nueu', Arial, Helvetica, sans-serif;
+  width: 400px;
+}
+
+
+
+
+#comments_wrapper ol { padding-bottom: 24px; border-bottom: 1px solid #ccc; }
+  div.article       { padding: 0 100px; }
+
+
+  h1, h2, h3              { font-weight: normal; font-style: normal; text-transform: uppercase; font-family: 'Univers59UltraCondensed', sans-serif; text-align: left; color: #43909f; opacity: .8; }
+
+  h2              { font-size: 24px; }
+  h3              { font-size: 20px; }
+  h2 small        { color: #333; text-transform: none; }
+  a               { text-decoration: none; color: #43909f; background: #fff; padding-left: 0.3em; padding-right: 0.3em; margin-left: -0.1em; margin-right: -0.1em; }
+  a:hover         { background: none; }
+  img             { display: block; border: 1px solid #DDDFF3; -webkit-box-shadow: 0px 0px 10px #d8d9ed; -moz-box-shadow: 0px 0px 10px #d8d9ed; background: none; margin: 24px 0; }
+  .amp            { font-family: Palatino, Times, serif; font-style: italic; font-size: 1.25em; }
+  em              { font-weight: bold; font-style: normal; }
+
+  /* we might need to change these to divs for consistent layout */
+  div.section   { display: block; position: relative; }
+  div.aside     { font-size: 10px; color: #888; padding-left: 30px; padding-right: 30px; min-height: 70px; background: transparent url(/assets/images/burrows-gaskill/aside.png) no-repeat center center; }
+  div.aside em  { color: #777; font-weight: normal; }
+  p.byline      { padding-top: 24px; text-align: center; }
+
+  h1#headline             { text-indent: -999em; height: 55px; background: transparent url(/assets/images/burrows-gaskill/headline.png) no-repeat center center; opacity: .7; margin-top: 3em; }
+  section#intro p.first   { color: #43909f; font-size: 14px; line-height: 24px; }
+
+  /*exploder*/
+  /* .ie h1#headline         { text-indent: 0; height: auto; background: none; text-align: center; } */
+        .ie h1, .ie h2, .ie h3  { opacity: 1.0; }
+</style>
